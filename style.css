@@ -1,0 +1,51 @@
+:root {
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.result-container,
+.summary-container {
+  width: 50%;
+  border-radius: 15px;
+  padding: 16px;
+}
+
+.result-container {
+  text-align: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.summary-container {
+  border: 1px solid black;
+}
+
+.continue {
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+.continue:hover {
+  background-color: hsl(221, 100%, 96%);
+}
+
+.attribution {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 8px;
+}
