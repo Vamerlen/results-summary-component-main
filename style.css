@@ -1,5 +1,5 @@
-:root {
-}
+/* :root {
+} */
 
 body,
 html {
@@ -28,11 +28,23 @@ html {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-.score-display {
+.result-header {
+  margin: 8px auto;
+}
+
+.score-container {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
   background-image: linear-gradient(
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
   );
+}
+
+.score {
+  font-size: 3rem;
 }
 
 .summary-container {
