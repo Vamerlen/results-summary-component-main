@@ -9,6 +9,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .container {
@@ -28,37 +29,109 @@ html {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+.result-header,
+.result-message,
+.result-breakdown {
+  margin: 20px auto;
+  color: hsl(241, 100%, 89%);
+}
+
 .result-header {
-  margin: 8px auto;
+  font-size: 1.25rem;
+}
+
+.result-message {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.result-breakdown {
+  width: 85%;
 }
 
 .score-container {
   margin: auto;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   background-image: linear-gradient(
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
   );
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .score {
-  font-size: 3rem;
-}
-
-.summary-container {
-  border: 1px solid black;
-}
-
-.continue {
-  border: none;
-  background-color: hsl(224, 30%, 27%);
+  font-size: 4rem;
+  font-weight: 800;
   color: hsl(0, 0%, 100%);
 }
 
+.ratio {
+  padding: 0;
+  color: hsl(241, 100%, 89%);
+}
+
+.summary-container {
+  box-shadow: 10px 10px 20px hsl(241, 100%, 89%);
+  padding: 24px;
+}
+
+.summary-header {
+  margin: 20px;
+  font-size: 1.25rem;
+}
+
+.bar {
+  width: 100%;
+  padding: 8px auto;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.bar span,
+.bar img {
+  vertical-align: middle;
+}
+
+span {
+  padding: 10px 20px;
+}
+
+.bar-1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.bar-2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.bar-3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.bar-4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.continue {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 36px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
 .continue:hover {
-  background-color: hsl(221, 100%, 96%);
+  background-color: hsl(241, 81%, 54%);
+  color: hsl(221, 100%, 96%);
 }
 
 .attribution {

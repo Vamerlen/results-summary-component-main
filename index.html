@@ -34,34 +34,63 @@
   </head>
   <body>
     <div class="container">
-      <div class="result-container">
+      <section class="result-container">
         <div class="result-header">Your Result</div>
         <div class="score-container">
-          <div class="score">76</div>
-          <div class="ratio">of 100</div>
+          <div class="score-display">
+            <div class="score">76</div>
+            <div class="ratio">of 100</div>
+          </div>
         </div>
 
-        <div class="summary-message">Great</div>
-        <div class="summary-breakdown">
+        <div class="result-message">Great</div>
+        <div class="result-breakdown">
           You scored higher than 65% of the people who have taken these tests.
         </div>
-      </div>
+      </section>
 
-      <div class="summary-container">
-        <div>Summary</div>
-        <div class="bar-graph"></div>
+      <section class="summary-container">
+        <div class="summary-header">Summary</div>
+        <div class="bar-graph" id="barGraph">
+          <div class="bar bar-1">
+            <span>
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="reaction icon"
+              />
+              Reaction 80 / 100</span
+            >
+          </div>
+          <div class="bar bar-2">
+            <span
+              ><img src="./assets/images/icon-memory.svg" alt="reaction icon" />
+              Memory 92 / 100</span
+            >
+          </div>
+          <div class="bar bar-3">
+            <span
+              ><img src="./assets/images/icon-verbal.svg" alt="reaction icon" />
+              Verbal 61 / 100</span
+            >
+          </div>
+          <div class="bar bar-4">
+            <span
+              ><img src="./assets/images/icon-visual.svg" alt="reaction icon" />
+              Visual 72 / 100</span
+            >
+          </div>
+        </div>
         <button class="continue">Continue</button>
-      </div>
+      </section>
     </div>
-
-    <!-- Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual
-    72 / 100 Continue -->
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Holger Mueller</a>.
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
