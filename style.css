@@ -5,21 +5,18 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Hanken Grotesk", sans-serif;
+  width: 100vw;
 }
 
 .container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .result-container,
 .summary-container {
-  width: 50%;
   border-radius: 15px;
   padding: 16px;
 }
@@ -67,6 +64,7 @@ html {
   font-size: 4rem;
   font-weight: 800;
   color: hsl(0, 0%, 100%);
+  margin: 0;
 }
 
 .ratio {
@@ -75,7 +73,7 @@ html {
 }
 
 .summary-container {
-  box-shadow: 10px 10px 20px hsl(241, 100%, 89%);
+  /* box-shadow: 10px 10px 20px hsl(241, 100%, 89%); */
   padding: 24px;
 }
 
@@ -85,19 +83,14 @@ html {
 }
 
 .bar {
-  width: 100%;
-  padding: 8px auto;
-  margin: 10px auto;
-  border-radius: 10px;
-}
-
-.bar span,
-.bar img {
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   vertical-align: middle;
 }
 
-span {
-  padding: 10px 20px;
+.bar p {
+  display: inline-block;
 }
 
 .bar-1 {
@@ -116,10 +109,19 @@ span {
   background-color: hsla(234, 85%, 45%, 0.1);
 }
 
+.description {
+  text-align: left;
+}
+
+.final-score {
+  text-align: right;
+}
+
 .continue {
+  font-size: 1rem;
   display: block;
   width: 100%;
-  margin: 10px auto;
+  margin: 20px auto;
   text-align: center;
   border: none;
   border-radius: 50px;
@@ -138,6 +140,6 @@ span {
   width: 100%;
   left: 0;
   bottom: 0;
-  position: absolute;
+  position: relative;
   padding: 8px;
 }
